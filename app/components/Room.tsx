@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { Avatar, Card, ConfigProvider, Flex, Space, Typography } from "antd";
 import { FaUser } from "@react-icons/all-files/fa/FaUser"
 import { FaBan } from "@react-icons/all-files/fa/FaBan"
