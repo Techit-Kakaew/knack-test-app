@@ -29,7 +29,7 @@ const Room: React.FC<Props> = ({ status, patientStatuses }) => {
     >
       <Card 
         title={
-          <div style={{ color: 'white', textAlign: 'center' }}>{status.name}</div>
+          <div style={{ color: 'white', textAlign: 'center' }}>{status.name} ( {currentPatients.length} )</div>
         } 
         bordered={false}
         style={{ width: 300 }}
@@ -70,7 +70,7 @@ const Room: React.FC<Props> = ({ status, patientStatuses }) => {
                         fontSize: '.825rem',
                       }}
                     >
-                      0{index + 1}
+                      {index < 10 ? `0${index + 1}` : index}
                     </div>
                     <Avatar 
                       size={50}
